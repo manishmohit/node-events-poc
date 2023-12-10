@@ -1,0 +1,20 @@
+{
+  "name": "events-poc",
+  "version": "1.0.0",
+  "description": "this is to do POC on node events module",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon EventEmitters.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishmohit/node-events-poc.git"
+  },
+  "author": "Manish Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manishmohit/node-events-poc/issues"
+  },
+  "homepage": "https://github.com/manishmohit/node-events-poc#readme"
+}
