@@ -107,4 +107,31 @@ console.group('Capture rejections of promise');
      */
 console.groupEnd();
 
+/**
+ * Event Names, max listeners set by default
+ */
+console.group('Returns names of all event');
+    const eventEmitter8 = new MyEmitter();
+    eventEmitter8.setMaxListeners(12);
+    /**
+     * setMaxListeners is set to max otherwise it won't allow more listener to be added for an event than default allowed.
+     */
+    eventEmitter8.on('foo', () => {});
+    eventEmitter8.on('bar', () => {});
+    eventEmitter8.on('foo', () => {});
+    eventEmitter8.on('foo', () => {});
+    eventEmitter8.on('foo', () => {});
+    eventEmitter8.on('foo', () => {});
+    eventEmitter8.on('foo', () => {});
+    eventEmitter8.on('foo', () => {});
+    eventEmitter8.on('foo', () => {});
+    eventEmitter8.on('foo', () => {});
+    eventEmitter8.on('foo', () => {});
+    eventEmitter8.on('foo', () => {});
+    
+    console.log(eventEmitter8.eventNames());
+    console.log(eventEmitter8.getMaxListeners());
+    console.log(eventEmitter8.listeners('foo'))
+console.groupEnd();
+
 

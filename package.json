@@ -4,7 +4,7 @@
   "description": "this is to do POC on node events module",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon EventEmitters.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
